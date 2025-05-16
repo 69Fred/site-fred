@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Formulaire2</title>
+    </head>
+    <body style="background-color: bisque;" >
+        <h1 style="color:red; text-align:center;border: 4px double red; border-collapse: collapse;">FORMULAIRE HTML</h1>
+        <br/>
+        <h2 style="color:blue; text-align:center;">Enregistrement des etudiants</h2>
+        <form method="post" action="traitement.php">
+            <fieldset>
+            <legend style="text-align: center;">ETAT CIVIL</legend> <!-- Titre du fieldset -->
+             <label for="Nom"> Nom: </label><br />
+             <input type="text" name="nom" id="nom" tabindex="10" placeholder="Votre nom" /><br />
+             <label for="Prenom"> Prénom:</label><br />
+             <input type="text" name="prenom" id="prenom" tabindex="20" placeholder="Votre prénom" /><br />
+             <label for="Date de naissance "> Date de naissance:</label><br />
+             <input type="text" name="Date de naissance" id="Date de naissance" tabindex="30" placeholder="Date de naissance" /><br />
+             <label for="Email"> E-mail:</label><br />
+             <input type="email" name="email" id="email" tabindex="30" placeholder="Votre email" /><br />
+             <label for="Sexe"> Sexe:</label><br />
+             <input type="text" name="Sexe" id="Sexe" tabindex="30" placeholder="Votre sexe" /><br />
+             <label for="Contact"> Contact:</label><br />
+             <input type="text" name="contact" id="contact" tabindex="30" placeholder="Votre contact" />
+            </fieldset>
+        </form> 
+        <form method="post" action="traitement.php">
+            <fieldset>
+            <legend style="text-align: center;">LES DIPLOMES</legend> <!-- Titre du fieldset -->
+            <p style="text-align: center;">
+             <input type="checkbox" name="frites" id="frites" /> <label for="frites">CEP</label>
+             <input type="checkbox" name="steak" id="steak" /> <label for="steak">BEPC</label>
+             <input type="checkbox" name="epinards" id="epinards" /> <label for="epinards">BAC</label>
+             <input type="checkbox" name="huitres" id="huitres" /> <label for="huitres">BTS</label>
+            </p>
+            </fieldset>
+        </form> 
+        <br/>
+        <form method="post" action="traitement.php">
+            <p style="text-align: center;">
+             <label for="ameliorer">VOTRE ADRESSE</label><br/>
+             <textarea name="ameliorer" id="ameliorer" rows="10" cols="50"></textarea><br/>
+            </p>
+        </form>
+        <br/>
+        <form method="post" action="traitement.php">
+            <p>
+            PAYS :<br />
+             <input type="radio" name="age" value="moins15" id="moins15" /> <label for="moins15">Bénin</label><br/>
+             <input type="radio" name="age" value="medium15-25" id="medium15-25" /> <label for="medium15-25">Portugal</label><br/>
+             <input type="radio" name="age" value="medium25-40" id="medium25-40" /> <label for="medium25-40">Etats-Unis</label><br />
+             <input type="radio" name="age" value="plus40" id="plus40" /> <label for="plus40">Chine</label>
+            </p>
+        </form>
+        <br/>
+        <form method="post" action="traitement.php">
+            <fieldset>
+            <legend style="text-align: center;">LES BOUTONS</legend> <!-- Titre du fieldset -->
+            <p style="text-align: center;">
+                <input type="submit" /> <input type="reset" /> 
+            </p>
+            </fieldset>
+        </form>
+    </body>
+</html>
